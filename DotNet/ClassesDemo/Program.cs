@@ -12,7 +12,7 @@ namespace ClassesDemo
             first.Address = "Wintergarden 123";
             first.ZipCode = "88200";
             first.City = "Snowy City";
-            first.Print();
+            // first.Print();
 
             // create a second instance (object) of the Customer class
             Customer second = new();
@@ -20,7 +20,34 @@ namespace ClassesDemo
             second.Address = "Homestreet 6 B";
             second.ZipCode = "51000";
             second.City = "Vaasa";
-            second.Print();
+            // second.Print();
+
+            // *********** car demo ***********
+            /*
+            Car myCar = new();
+            myCar.Make = "Ford";
+            myCar.Model = "S-Max";
+            myCar.TopSpeed = 210;
+            myCar.StartEngine();
+            myCar.Accelerate();
+
+            Car neighborsCar = new();
+            neighborsCar.Make = "Toyota";
+            neighborsCar.Model = "Corolla";
+            myCar.TopSpeed = 190;
+            myCar.StartEngine();
+            myCar.Accelerate();
+            */
+
+            // testing functionalities
+            Console.WriteLine("Car testing starts.");
+            Car testCar = new();
+            testCar.TopSpeed = 25;
+            testCar.StartEngine();
+            testCar.Accelerate();
+            testCar.Accelerate();
+            testCar.Accelerate();
+            Console.WriteLine("The testing car's current speed is: " + testCar.CurrentSpeed);
 
 
             /*

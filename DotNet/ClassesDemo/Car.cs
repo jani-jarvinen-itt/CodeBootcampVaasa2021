@@ -24,12 +24,26 @@ namespace ClassesDemo
 
         public void Accelerate()
         {
-            CurrentSpeed += 10;
+            if (!EngineRunning)
+            {
+                Console.WriteLine("Cannot accelerate without the engine running.");
+            }
+            else
+            {
+                CurrentSpeed += 10;
+                if (CurrentSpeed > TopSpeed) {
+                    CurrentSpeed = TopSpeed;
+                }
+            }
         }
 
         public void Brake()
         {
             CurrentSpeed -= 10;
+            if (CurrentSpeed < 0) 
+            {
+                CurrentSpeed = 0;
+            }
         }
     }
 }
