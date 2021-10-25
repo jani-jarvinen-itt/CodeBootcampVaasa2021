@@ -47,8 +47,12 @@ namespace ClassesDemo
             testCar.Accelerate();
             testCar.Accelerate();
             testCar.Accelerate();
+            // testCar.RoofDown = true;
             Console.WriteLine("The testing car's current speed is: " + testCar.CurrentSpeed);
 
+            SportsCar sport = new();
+            sport.RoofDown = true;
+            sport.StartEngine();
 
             /*
             string customerName = "Cecilia Customer";
