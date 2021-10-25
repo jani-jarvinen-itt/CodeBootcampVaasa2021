@@ -6,6 +6,7 @@ namespace ClassesDemo
     {
         static void Main(string[] args)
         {
+            // create an instance (object) of the Customer class
             Customer first = new();
             first.Name = "Jane Doe";
             first.Address = "Wintergarden 123";
@@ -13,6 +14,7 @@ namespace ClassesDemo
             first.City = "Snowy City";
             first.Print();
 
+            // create a second instance (object) of the Customer class
             Customer second = new();
             second.Name = "Tom Tester";
             second.Address = "Homestreet 6 B";
