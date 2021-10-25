@@ -31,7 +31,8 @@ namespace ClassesDemo
             else
             {
                 CurrentSpeed += 10;
-                if (CurrentSpeed > TopSpeed) {
+                if (CurrentSpeed > TopSpeed)
+                {
                     CurrentSpeed = TopSpeed;
                 }
             }
@@ -40,9 +41,17 @@ namespace ClassesDemo
         public void Brake()
         {
             CurrentSpeed -= 10;
-            if (CurrentSpeed < 0) 
+            if (CurrentSpeed < 0)
             {
                 CurrentSpeed = 0;
+            }
+        }
+
+        public void BrakeHard()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Brake();
             }
         }
     }
