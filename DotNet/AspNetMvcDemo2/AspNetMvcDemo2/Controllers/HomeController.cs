@@ -23,6 +23,21 @@ namespace AspNetMvcDemo2.Controllers
             return "Hello World!";
         }
 
+        public int FileSum()
+        {
+            string filename = "C:\\Bootcamp\\Vaasa\\Numbers.txt";
+            string[] lines = System.IO.File.ReadAllLines(filename);
+
+            int sum = 0;
+            foreach (string line in lines)
+            {
+                int value = int.Parse(line);
+                sum += value;   // sum = sum + value;
+            }
+
+            return sum;
+        }
+
         public IActionResult SecondPage()
         {
             return View();
