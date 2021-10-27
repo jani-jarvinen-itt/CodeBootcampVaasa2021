@@ -17,6 +17,18 @@ namespace FileSum
                 sum += value;   // sum = sum + value;
             }
 
+            // alternative implementation:
+            /*
+            for (int index = 0; index < lines.Length; index++)
+            {
+                string line = lines[index];
+
+                int value = int.Parse(line);
+                sum += value;   // sum = sum + value;
+            }
+            */
+
+
             Console.WriteLine("Calculated sum is: " + sum);
         }
     }
