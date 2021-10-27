@@ -11,10 +11,21 @@ namespace FileSum
             string[] lines = File.ReadAllLines(filename);
 
             int sum = 0;
+            int currentLine = 1;
             foreach (string line in lines)
             {
-                int value = int.Parse(line);
-                sum += value;   // sum = sum + value;
+                try
+                {
+                    int value = int.Parse(line);
+                    sum += value;   // sum = sum + value;
+                }
+                catch
+                {
+                    Console.WriteLine("Cannot process line " + currentLine +
+                                      " with value \"" + line + "\", not a valid number.");
+                }
+
+                currentLine++;
             }
 
             // alternative implementation:
