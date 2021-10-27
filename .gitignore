@@ -22,3 +22,6 @@ DotNet/ClassesDemo/obj/
 /DotNet/VisualStudioConsoleAppTest/.vs/VisualStudioConsoleAppTest
 /DotNet/VisualStudioConsoleAppTest/VisualStudioConsoleAppTest/bin/Debug/net5.0
 /DotNet/VisualStudioConsoleAppTest/VisualStudioConsoleAppTest/obj
+/DotNet/FileSum/.vscode
+/DotNet/FileSum/bin/Debug/net5.0
+/DotNet/FileSum/obj
