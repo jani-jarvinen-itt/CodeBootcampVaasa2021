@@ -23,7 +23,7 @@ namespace AspNetMvcDemo2.Controllers
             return "Hello World!";
         }
 
-        public int FileSum()
+        public IActionResult FileSum()
         {
             string filename = "C:\\Bootcamp\\Vaasa\\Numbers.txt";
             string[] lines = System.IO.File.ReadAllLines(filename);
@@ -35,7 +35,11 @@ namespace AspNetMvcDemo2.Controllers
                 sum += value;   // sum = sum + value;
             }
 
-            return sum;
+            ViewBag.SourceOfData = filename;
+            ViewBag.CalculatedSum = sum;
+
+            // return sum;
+            return View();
         }
 
         public IActionResult SecondPage()
