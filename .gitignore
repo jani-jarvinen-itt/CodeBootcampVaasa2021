@@ -25,3 +25,6 @@ DotNet/ClassesDemo/obj/
 /DotNet/FileSum/.vscode
 /DotNet/FileSum/bin/Debug/net5.0
 /DotNet/FileSum/obj
+/DotNet/DateProcessingDemo/.vs/DateProcessingDemo/v16
+/DotNet/DateProcessingDemo/DateProcessingDemo/bin/Debug/net5.0
+/DotNet/DateProcessingDemo/DateProcessingDemo/obj
