@@ -7,6 +7,12 @@ namespace FileSum
     {
         static void Main(string[] args)
         {
+            /*
+            Console.WriteLine("AAA");
+            Console.WriteLine("\"AAA\"");
+            Console.WriteLine("'AAA'");
+            */
+
             string filename = "C:\\Bootcamp\\Vaasa\\Numbers.txt";
             string[] lines = File.ReadAllLines(filename);
 
