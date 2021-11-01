@@ -18,7 +18,11 @@ namespace DateProcessingDemo
             Console.WriteLine("Second date (default format): " + date2);
             Console.WriteLine("First date (en-US): " + date1.ToString(enUS));
             Console.WriteLine("First date (fr): " + date1.ToString(fr));
+            Console.WriteLine("First date (custom): " + date1.ToString("yyyy$MM"));
             Console.WriteLine();
+
+            int number = 1234;
+            string value = number.ToString();
 
             // DateTime parsedDate = DateTime.Parse("11/6/2021", enUS);
 
