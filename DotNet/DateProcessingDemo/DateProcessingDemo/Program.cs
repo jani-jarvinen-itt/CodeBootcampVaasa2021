@@ -10,10 +10,16 @@ namespace DateProcessingDemo
             DateTime date1 = ReadDateFromUser("Enter the first date:");
             DateTime date2 = ReadDateFromUser("Enter the second date:");
 
+            // display the values entered
+            Console.WriteLine("First date: " + date1);
+            Console.WriteLine("Second date: " + date2);
+
             // date calculations
             TimeSpan difference = date2 - date1;
-            Console.WriteLine("Difference in days: " + difference.TotalDays);
-            Console.WriteLine("Difference in hours: " + difference.TotalHours);
+            Console.WriteLine("Difference in days: " + difference.Days);
+            Console.WriteLine("Difference in hours: " + difference.Hours);
+            Console.WriteLine("Difference in total days: " + difference.TotalDays);
+            Console.WriteLine("Difference in total hours: " + difference.TotalHours);
         }
 
         private static DateTime ReadDateFromUser(string prompt)
