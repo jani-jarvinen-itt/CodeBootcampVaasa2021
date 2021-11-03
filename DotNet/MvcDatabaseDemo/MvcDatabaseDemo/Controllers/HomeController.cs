@@ -30,6 +30,11 @@ namespace MvcDatabaseDemo.Controllers
 
         public IActionResult Orders()
         {
+            NorthwindContext context = new();
+            List<Order> allOrders = context.Orders.ToList();
+
+            ViewBag.AllOrders = allOrders;
+
             return View();
         }
 
