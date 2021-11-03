@@ -42,3 +42,8 @@ DotNet/ClassesDemo/obj/
 /DotNet/LinqDemo/.vs/LinqDemo/v16
 /DotNet/LinqDemo/LinqDemo/bin/Debug/net5.0
 /DotNet/LinqDemo/LinqDemo/obj
+/DotNet/DatabaseDemo/.vs/DatabaseDemo/DesignTimeBuild
+/DotNet/LinqDemo/.vs/LinqDemo/DesignTimeBuild
+/DotNet/WebApiDemo/.vs/WebApiDemo
+/DotNet/WebApiDemo/WebApiDemo/bin/Debug/net5.0
+/DotNet/WebApiDemo/WebApiDemo/obj
