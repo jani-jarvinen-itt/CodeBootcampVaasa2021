@@ -28,6 +28,11 @@ namespace MvcDatabaseDemo.Controllers
             return View();
         }
 
+        public IActionResult Orders()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
