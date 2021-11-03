@@ -28,10 +28,13 @@ namespace MvcDatabaseDemo.Controllers
             return View();
         }
 
-        public IActionResult Orders()
+        public IActionResult Orders(int id)
         {
             NorthwindContext context = new();
-            List<Order> allOrders = context.Orders.ToList();
+            List<Order> allOrders = (from o in context.Orders
+                                     where o.EmployeeId == id
+                                     orderby o.OrderDate descending
+                                     select o).ToList();
 
             ViewBag.AllOrders = allOrders;
 
