@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Database Demo!</h1>
+</div>
+
+@foreach (MvcDatabaseDemo2.Models.Customer customer in ViewBag.AllCustomers)
+{
+    <p>@customer.CompanyName</p>
+}

@@ -1,0 +1,5 @@
+
+
+dotnet ef dbcontext scaffold
+
+dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
