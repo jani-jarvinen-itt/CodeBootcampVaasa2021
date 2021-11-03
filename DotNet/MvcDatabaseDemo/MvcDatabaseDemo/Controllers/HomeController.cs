@@ -20,6 +20,11 @@ namespace MvcDatabaseDemo.Controllers
 
         public IActionResult Index()
         {
+            NorthwindContext context = new();
+            List<Customer> allCustomers = context.Customers.ToList();
+
+            ViewBag.AllCustomers = allCustomers;
+
             return View();
         }
 
