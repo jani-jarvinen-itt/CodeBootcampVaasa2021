@@ -39,3 +39,6 @@ DotNet/ClassesDemo/obj/
 /DotNet/MvcDatabaseDemo2/.vscode
 /DotNet/MvcDatabaseDemo2/bin/Debug/net5.0
 /DotNet/MvcDatabaseDemo2/obj
+/DotNet/LinqDemo/.vs/LinqDemo/v16
+/DotNet/LinqDemo/LinqDemo/bin/Debug/net5.0
+/DotNet/LinqDemo/LinqDemo/obj
