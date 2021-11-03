@@ -8,6 +8,9 @@
         <tr>
             <th>Order Id</th>
             <th>Order Date</th>
+            <th>Ship To</th>
+            <th>City</th>
+            <th>Country</th>
         </tr>
     </thead>
     <tbody>
@@ -15,7 +18,10 @@
         {
             <tr>
                 <td>@order.OrderId</td>
-                <td>@order.OrderDate</td>
+                <td>@order.OrderDate.Value.ToString("d.M.yyyy")</td>
+                <td>@order.ShipName</td>
+                <td>@order.ShipCity</td>
+                <td>@order.ShipCountry</td>
             </tr>
         }
     </tbody>
