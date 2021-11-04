@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CustomerList from './CustomerList';
 import './index.css';
-import LifecycleDemo from './LifecycleDemo';
 import reportWebVitals from './reportWebVitals';
+// import LifecycleDemo from './LifecycleDemo';
 // import App from './App';
 // import MyComponent from './MyComponent';
 // import MyClassComponent from './MyClassComponent';
@@ -10,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <LifecycleDemo />
+    <CustomerList />
   </React.StrictMode>,
   document.getElementById('root')
 );
