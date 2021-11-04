@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MyComponent from './MyComponent';
+import MyClassComponent from './MyClassComponent';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <MyComponent />
+    <MyClassComponent />
   </React.StrictMode>,
   document.getElementById('root')
 );
