@@ -7,6 +7,8 @@ namespace WebApiDemo.Controllers
     [ApiController]
     public class MyTestController : ControllerBase
     {
+        [HttpGet]
+        [Route("")]
         public string Hello()
         {
             return "Hello World!";

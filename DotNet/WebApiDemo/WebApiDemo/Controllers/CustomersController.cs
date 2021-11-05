@@ -12,6 +12,8 @@ namespace WebApiDemo.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
+        [HttpGet]
+        [Route("")]
         public List<Customer> AllCustomers()
         {
             NorthwindContext context = new();

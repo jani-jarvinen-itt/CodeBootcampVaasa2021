@@ -13,6 +13,7 @@ namespace WebApiDemo.Controllers
     public class HelloController : ControllerBase
     {
         [HttpPost]
+        [Route("")]
         public object SayHello(HelloData data)
         {
             return new

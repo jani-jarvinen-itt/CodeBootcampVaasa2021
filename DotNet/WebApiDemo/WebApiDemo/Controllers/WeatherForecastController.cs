@@ -24,6 +24,7 @@ namespace WebApiDemo.Controllers
         }
 
         [HttpGet]
+        [Route("")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
