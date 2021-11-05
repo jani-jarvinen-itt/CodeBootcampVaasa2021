@@ -21,6 +21,25 @@ class CustomerList extends React.Component {
         console.log("Fetch call has been made.");
     }
 
+    myButtonClickHandler() {
+        console.log("Button was clicked!");
+        // alert("Hello from React!");
+
+        const data = { username: 'Tom Tester', shoenumber: 42 };
+        fetch('https://localhost:44378/api/hello', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data.text);
+            alert(data.text);
+        });
+    }
+
     render() {
         console.log("In CustomerList.render");
 
@@ -38,6 +57,7 @@ class CustomerList extends React.Component {
         return (
             <div>
                 <h1>Customer List</h1>
+                <button onClick={this.myButtonClickHandler} className="btn btn-outline-primary mt-2 mb-2">Click me!</button>
                 <p>Number of customer: {this.state.customers.length}</p>
                 <table className="table table-striped w-75">
                     <thead>
