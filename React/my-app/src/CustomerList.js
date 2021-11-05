@@ -46,7 +46,7 @@ class CustomerList extends React.Component {
         let list = [];
         for (let index = 0; index < this.state.customers.length; index++) {
             const customer = this.state.customers[index];
-            list.push(<tr>
+            list.push(<tr key={index}>
                 <td>{customer.customerId}</td>
                 <td>{customer.companyName}</td>
                 <td>{customer.contactName}</td>
