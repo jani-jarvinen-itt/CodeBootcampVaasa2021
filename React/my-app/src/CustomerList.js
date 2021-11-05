@@ -27,14 +27,31 @@ class CustomerList extends React.Component {
         let list = [];
         for (let index = 0; index < this.state.customers.length; index++) {
             const customer = this.state.customers[index];
-            list.push(<p>Id: {customer.customerId} – Name: {customer.companyName}</p>);
+            list.push(<tr>
+                <td>{customer.customerId}</td>
+                <td>{customer.companyName}</td>
+                <td>{customer.contactName}</td>
+                <td>{customer.city}</td>
+            </tr>);
         }
 
         return (
             <div>
                 <h1>Customer List</h1>
                 <p>Number of customer: {this.state.customers.length}</p>
-                {list}
+                <table className="table table-striped w-75">
+                    <thead>
+                        <tr>
+                            <th>Customer Id</th>
+                            <th>Company Name</th>
+                            <th>Contact Name</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {list}
+                    </tbody>
+                </table>
             </div>);
     }
 }
