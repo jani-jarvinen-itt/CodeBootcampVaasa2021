@@ -11,7 +11,7 @@ class CustomerList extends React.Component {
     componentDidMount() {
         console.log("In CustomerList.componentDidMount");
 
-        fetch('https://localhost:44378/api/customers')
+        fetch('http://51.120.120.126:8000/api/customers')
             .then(response => response.json())
             .then(json => {
                 console.log(json);
@@ -26,7 +26,7 @@ class CustomerList extends React.Component {
         // alert("Hello from React!");
 
         const data = { username: 'Tom Tester', shoenumber: 42 };
-        fetch('https://localhost:44378/api/hello', {
+        fetch('http://51.120.120.126:8000/api/hello', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
